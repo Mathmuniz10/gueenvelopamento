@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <link href="css/estilos_adesivos.css" rel="stylesheet"/>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+        <meta charset="UTF-8"/>
+        <title>envelopamento</title>
+        <script>
+            alert("Conheça nossa linha de adesivos!");
+
+            data=new Date 
+            dia=new Array("Domingo","Segunda-feira","Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
+            mes=new Array("Janeiro","Fevereiro","Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Dezembro")
+
+            //Função para abrir a POP de detalhes do adesivo
+            function abrirDetalhes(nome,imagem,descricao){
+                const url=`pop_adesivos.html?nomeProd=${encodeURIComponent(nome)}&imagemProd=${encodeURIComponent(imagem)}&descricaoProd=${encodeURIComponent(descricao)}`
+                window.open(url, "_blank", "width=800,height=700")
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="divHeader"> 
+                <img src="img/meulogo.png.png " title="Site do envelopamento" class="logo"/>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>adesivos</li>
+                        <li>Contato</li>                       
+                    </ul>                   
+                </nav>
+            </div>
+        <div>
+            <!--Banner-->
+                <img class="banner" src="../gueEnvelopamento/img/banner_9.jpg" alt="">
+            </div>
+            <main>
+                <!--Título-->
+                <ul class="adesivos-titulo">
+                    <li class="adesivos-item">adesivos</li>
+                </ul>
+                <p style="text-align: right; margin-right: 10px;">
+                    <script>
+                         document.write(dia[data.getDay()] + ", " + data.getDate() + " de " + mes[data.getMonth()] + " de " + data.getFullYear());
+                    </script>
+                </p>
+                <P class="texto-adesivos">
+                    sei la sei la sei la 
+                    <br><br>
+                    sei la sei la sei la 
+                    <br><br>
+                    sei la sei la sei la 
+                </P>
+                <div class="container">
+                    <div class="card" onclick = "abrirDetalhes('Veículos','Descrição do adesivo')">
+                        <img src="img/"/>
+                        <h2>Veículos</h2>
+                        <p>Carros, Motos, Vans, Caminhões, Ônibus</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/"/>
+                        <h2>Eletrodomésticos</h2>
+                        <p>Geladeiras, Micro-ondas, Fogões...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="img/"/>
+                        <h2>Móveis</h2>
+                        <p>Armários, Guarda-Roupas, Mesas...</p>
+                </div>
+                </div>
+            </main>
+            <header>
+            <!--Rodapé-->
+            <footer>
+                <img src="img/meulogo.png.png " title="Site do envelopamento" class="logo_footer"/>
+                <p> <a href="https://wa.me/5511958965806"><i class="fa fa-whatsapp"></i></a> (11) 95896-5806 | <a href="https://instagram.com/gue_envelopamentos_"><i class="fa fa-instagram"></i></a> @gue_envelopamentos</p>
+            </footer>
+         </header>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>envelopamento</title>
+    </head>
+    <body>
+        <main>
+            <div>
+                <h1 id="nome-adesivos">Título</h1>
+                <img id="imagem-adesivos"/>
+                <P id="descricao-adesivos">Descrição do adesivo</P>
+
+                <!--Preenchimento das informações-->
+                <script>
+                    //Função para capturar os parâmetros
+                    function getParametros(info){
+                        const urlParametros = new URLSearchParams(window.location.search); return urlParametros.get(info);
+                    }
+
+                    //Preenche as informações na POP 
+                    document.getElementById("nome-adesivos").textContent = getParametros("nomeProd");
+                    document.getElementById("imagem-adesivos").src = getParametros("imagemProd");
+                    document.getElementById("descricao-adesivos").textContent = getParametros("descricaoProd");
+                    
+                </script>
+            <div>
+        <main>
+    <body>
+<html>
