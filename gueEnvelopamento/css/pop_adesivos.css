@@ -1,0 +1,19 @@
+/*Estilização da POP de Detalhes*/ 
+.pop{
+    margin: 0;
+}
+.pop img {
+    width: 700;
+    height: 500;
+}
+.pop h1{
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color:cornflowerblue; 
+}
+.pop p{
+    padding: 2% 0 9% 7% ;
+    margin: 0;
+    white-space: pre-line;
+}
